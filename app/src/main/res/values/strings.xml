@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aura Defense</string>
+    <string name="app_subtitle">Private and realistic mobile defense</string>
+    <string name="privacy_note">Aura does not use root, does not simulate threats, and only uses functions permitted by Android.</string>
+</resources>

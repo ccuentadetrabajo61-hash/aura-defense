@@ -5,26 +5,14 @@ plugins {
 
 android {
     namespace = "com.aura.defense"
-    compileSdk = 34
-
-    flavorDimensions += "version"
-
-    productFlavors {
-        create("privateRelease") {
-            dimension = "version"
-            applicationIdSuffix = ".private"
-        }
-        create("playRelease") {
-            dimension = "version"
-        }
-    }
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.aura.defense"
-        minSdk = 24
-        targetSdk = 34
+        minSdk = 26
+        targetSdk = 35
         versionCode = 1
-        versionName = "1.0.0"
+        versionName = "0.1.0"
     }
 
     buildTypes {
@@ -63,9 +51,5 @@ dependencies {
     implementation("androidx.compose.ui:ui:1.5.4")
     implementation("androidx.compose.ui:ui-tooling-preview:1.5.4")
     implementation("androidx.compose.material3:material3:1.1.2")
-    implementation("androidx.compose.material:material-icons-extended:1.5.4")
-    implementation("androidx.navigation:navigation-compose:2.7.7")
-    implementation("com.google.mlkit:barcode-scanning:17.3.0")
-    implementation("androidx.work:work-runtime-ktx:2.9.0")
     debugImplementation("androidx.compose.ui:ui-tooling:1.5.4")
 }
